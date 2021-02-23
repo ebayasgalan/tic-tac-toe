@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  overflow: auto;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.board li {
+  float: left;
+  margin: 10px;
+  width: 60px;
+  height: 30px;
+  list-style: none;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.o {
+  background-color: red;
+  color: white;
+}
+
+.x {
+  background-color: blue;
+  color: white;
+}
+
+.board li:hover, .reset:hover {
+  cursor: pointer;
+  border-color: orange;
+}
+
+.reset {
+  position: absolute;
+  top: 12.5rem;
+  left: 5.2rem;
+  width: 120px;
+  margin: 20px auto;
+  border-radius: .3rem;
+  font-size: 20px;
+}
+
+.reset:hover {
+  color: white;
+  background-color: orange;
+}
